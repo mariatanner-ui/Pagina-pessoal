@@ -1,0 +1,45 @@
+/* ESTILOS GERAIS */
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8abe5;
+    color: #ffffff;
+    transition: background 0.3s ease; /* Transição suave para tema escuro */
+}
+
+/* CABEÇALHO */
+header {
+    text-align: center;
+    border-bottom: 2px solid #ff17b9;
+    padding-bottom: 15px;
+}
+
+/* SEÇÕES DE CONTEÚDO */
+section {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: rgb(255, 0, 170);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(238, 236, 236, 0.1); /* Sombra sutil */
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    iframe {
+        width: 100%; /* Ocupa largura total em dispositivos pequenos */
+        height: auto; /* Altura proporcional */
+    }
+}
+
+/* TEMA ESCURO (controlado por JavaScript) */
+body.tema-escuro {
+    background-color: #ffffff;
+    color: #f4f4f4;
+}
+
+body.tema-escuro section {
+    background-color: #fff6f6;
+}
